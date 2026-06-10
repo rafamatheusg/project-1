@@ -16,7 +16,7 @@ cp .env.example .env        # add your Groq API key inside
 ```bash
 python ingest.py    # clean the documents
 python chunk.py     # split into chunks
-python embed.py     # embed + store in ChromaDB (downloads model ~90MB first time)
+python embed.py     # embed + store in ChromaDB
 python app.py
 ```
 
@@ -29,27 +29,23 @@ To run the evaluation: `python evaluate.py`
 
 ## Evaluation
 
-| Question                                    | Expected                                                  | Accuracy          |
-| ------------------------------------------- | --------------------------------------------------------- | ----------------- |
-| Does Dr. Johnson curve her exams?           | Curves midterm, not final                                 | run `evaluate.py` |
-| What are Professor Martinez's office hours? | MWF 10am–12pm, room 215                                   | run `evaluate.py` |
-| Grade breakdown for Dr. Chen's PHYS101?     | HW 15%, clicker 5%, midterms 20% each, final 30%, lab 10% | run `evaluate.py` |
-| Calculators allowed on Thompson's exams?    | No — never                                                | run `evaluate.py` |
-| Does Dr. Lee drop homework grades?          | Yes — two lowest                                          | run `evaluate.py` |
+Does Dr. Johnson curve her exams? Curves midterm, not final | run `evaluate.py` |
+Grade breakdown for Dr. Chen's PHYS101? HW 15%, clicker 5%, midterms 20% each, final 30%, lab 10% | run `evaluate.py` |
+Calculators allowed on Thompson's exams? No — never | run `evaluate.py` |
+Does Dr. Lee drop homework grades? Yes two lowest | run `evaluate.py` |
 
 **Known failure case:** Questions about curving (Q1) sometimes come back partially accurate. The relevant detail — "curves the midterm but NOT the final" — lives in one specific review. If a different Johnson review scores slightly higher in retrieval, the LLM gets the first half right but misses the "not the final" distinction. This is a retrieval ranking issue, not a generation issue.
 
 ## Spec reflection
 
-The spec's rule to test retrieval before adding generation was the most useful constraint. Running `embed.py`'s retrieval test confirmed all top distances were under 0.35 before the LLM was introduced, which made later debugging much easier.
+The spec's rule to test retrieval before adding generation was the most useful constraint.
 
-The implementation uses `gr.Blocks` instead of the spec's suggested `gr.Interface` in order to add a debug panel showing raw retrieved chunks. This makes it easier to distinguish retrieval failures from generation failures during the demo.
+The implementation uses `gr.Blocks` instead of the spec's suggested `gr.Interface` in order to add a debug panel showing raw retrieved chunks. This makes it easier to distinguish retrieval failures from generation failures r
 
 ## AI tool usage
 
-- Asked Claude to generate all five pipeline scripts, providing the relevant `planning.md` section as context for each
-- The initial grounding prompt used "try to answer only from context" — changed to explicit numbered rules with a required refusal phrase to prevent well-spoken hallucinations
-- The chunk preview length in `chunk.py` was changed from 400 to 500 characters after noticing that key facts in some reviews appeared late in the paragraph
+Used Claude to draft the grounding prompt in query.py. It suggested a single instruction; I expanded it into numbered rules so the model couldn't wiggle around the constraint.
+Asked Claude to explain ChromaDB's query() return format. The example it gave used an older API — I had to check the docs and correct the index syntax
 
 ## Project structure
 

@@ -8,7 +8,6 @@ A RAG system that answers questions about professors at State University using s
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env        # add your Groq API key inside
 ```
 
 ## Run the pipeline

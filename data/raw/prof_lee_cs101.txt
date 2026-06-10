@@ -1,0 +1,19 @@
+Professor: Dr. Emily Lee
+Course: CS101 - Introduction to Computer Science
+Department: Computer Science
+University: State University
+
+Review 1:
+Dr. Lee is the easiest CS101 professor by far. If you just need to fulfill the requirement and aren't planning to major in CS, take her. Exams are straightforward — she gives a study guide beforehand and sticks to it exactly. She teaches from the textbook closely, so if you read before class you basically know everything she'll cover. Attendance is not tracked. She posts all her slides before class.
+
+Review 2:
+Lee is a good professor if you want to learn the basics without too much stress. She's very kind and patient in office hours — never makes you feel dumb for asking basic questions. Her explanations are clear but she doesn't go very deep. The CS majors in my class were bored but everyone else appreciated the pace. Homework is easy and graded on completion, not correctness.
+
+Review 3:
+I took Lee's CS101 and got an A without much effort, but then I struggled in CS201 because I hadn't really challenged myself. In hindsight I wish I'd taken Johnson or one of the harder sections. If you're pre-med or need it for another major, Lee is the right choice. If you're thinking about CS as a career, push yourself and take a harder section.
+
+Review 4:
+Her office hours are very lightly attended which means you get a lot of personal attention if you do go. She's in room 208 on Mondays and Wednesdays 1-3pm. She uses Python and the course textbook is "How to Think Like a Computer Scientist" (free online). She drops your two lowest homework grades and offers one extra credit project at the end of the semester worth up to 5 points on your final grade.
+
+Review 5:
+Grade breakdown: homework 30% (graded completion), two midterms 20% each, final 30%. She drops the lower of the two midterm grades, so you really only need to do well on one midterm and the final. Very forgiving grading policy overall. She gives feedback on assignments within a week. Would recommend for anyone who is anxious about coding or new to programming.

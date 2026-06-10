@@ -1,0 +1,19 @@
+Professor: Dr. Carlos Martinez
+Course: CS201 - Data Structures
+Department: Computer Science
+University: State University
+
+Review 1:
+Martinez is brilliant but lectures very fast. CS201 is already a hard course and his teaching style doesn't make it easier. He expects you to have CS101 rock solid before walking in. The course covers linked lists, stacks, queues, trees, graphs, and hash tables. His exams are written (no computer) and focus heavily on time complexity analysis — know your Big-O cold. He does not curve. Ever.
+
+Review 2:
+Took Martinez for CS201 and honestly it changed how I think about programming. He's demanding but incredibly fair. Every homework problem is taken directly from past exams, so if you do the homework you understand the exams. He posts all past exams on the course website going back 5 years — use them. The final is cumulative and 40% of your grade. Three homework sets, one midterm, one final. No group projects.
+
+Review 3:
+Martinez has a reputation for being hard but I found him very approachable once I went to office hours. He holds office hours Monday, Wednesday, Friday 10am-12pm in CS building room 215. He also has a TA session Thursday evenings 6-8pm in the lab. The TAs for CS201 are usually very good — check who is TAing before you register. The worst part of the course is the AVL tree implementation project — start it at least 2 weeks early, not one. Everyone who starts it the week before regrets it.
+
+Review 4:
+His slides are dense and he goes through them quickly. Recording lectures is technically allowed but the audio quality in his room is bad. He recommends the textbook (Sedgewick) and actually assigns readings from it, unlike many professors who say "optional reading" and mean it. There are weekly reading quizzes on Canvas that are open-book but timed — 10 minutes for 5 questions. They're easy if you did the reading and impossible if you didn't.
+
+Review 5:
+Grade breakdown: reading quizzes 10%, homework 25%, midterm 30%, final 35%. He does not drop any grades. The curve for the class historically has been about 5 points added to the final grade, but he doesn't announce this until after the final — don't count on it. Students who attend every class average about a full letter grade higher than students who don't, based on what upperclassmen told me. His passion for the subject is infectious even when the material is hard.
